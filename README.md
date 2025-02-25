@@ -6,9 +6,13 @@ This project focuses on creating interactive data visualizations in Power BI by 
 
 Key Features
 ✅ Merging multiple Excel files into a single dataset
+
 ✅ Cleaning and transforming data using Power Query
+
 ✅ Creating interactive dashboards in Power BI
+
 ✅ Utilizing DAX (Data Analysis Expressions) for advanced calculations
+
 ✅ Applying filters, slicers, and drill-through features
 
 Requirements
@@ -50,7 +54,9 @@ Export reports in PDF, PPT, or Excel format as needed.
 Future Enhancements:
 
 🔹 Implement real-time data updates
+
 🔹 Integrate additional data sources (SQL, APIs)
+
 🔹 Automate report generation and scheduling
 
 ![Screenshot](https://github.com/user-attachments/assets/1016e05d-5612-449e-a614-2a16f5f53f48)
