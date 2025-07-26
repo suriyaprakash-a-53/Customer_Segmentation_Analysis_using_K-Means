@@ -1,62 +1,133 @@
-# data_visualization
-Basic data visualization dashboard
-Power BI Data Visualization & Excel Merging
-Project Overview:
-This project focuses on creating interactive data visualizations in Power BI by merging and analyzing multiple Excel datasets. The goal is to derive meaningful insights from data and present them in a visually engaging manner.
+# Customer Segmentation Analysis using K-Means Algorithm
 
-Key Features
-✅ Merging multiple Excel files into a single dataset
+This project focuses on segmenting customers into distinct groups based on their purchasing behavior and demographic data using the **K-Means Clustering** algorithm. By identifying customer segments, businesses can create targeted marketing strategies and improve customer experience.
 
-✅ Cleaning and transforming data using Power Query
+## 📌 Objective
 
-✅ Creating interactive dashboards in Power BI
+To analyze customer data and group customers into distinct segments based on similar behaviors using unsupervised learning (K-Means clustering).
 
-✅ Utilizing DAX (Data Analysis Expressions) for advanced calculations
+---
 
-✅ Applying filters, slicers, and drill-through features
+## 📂 Project Structure
 
-Requirements
-Software:
+```
+Customer-Segmentation-KMeans/
+│
+├── data/
+│   └── Mall_Customers.csv            # Input dataset (demographic & behavioral data)
+│
+├── notebooks/
+│   └── segmentation_analysis.ipynb  # Main Jupyter notebook for EDA & modeling
+│
+├── outputs/
+│   ├── cluster_visualizations/     # Charts and plots of clusters
+│   └── cluster_data.csv            # Dataset with assigned clusters
+│
+├── README.md                     # Project documentation
+└── requirements.txt              # Python dependencies
+```
 
-Microsoft Excel
-Power BI Desktop
+---
 
-Skills Needed:
+## 🔍 Dataset Overview
 
-Basic understanding of data structures
-Power BI visualization techniques
-Excel data handling
-Project Workflow
+* **Features used (example)**:
 
-Data Preparation:
+  * `CustomerID`
+  * `Age`
+  * `Annual Income (k$)`
+  * `Spending Score (1-100)`
+  * `Gender` (encoded for analysis)
 
-Combine multiple Excel files
-Remove duplicates and clean raw data
+---
 
-Data Transformation:
+## 🧠 Techniques Used
 
-Use Power Query for formatting and transformations
-Create relationships between datasets
-Data Visualization:
-Design dashboards with charts, graphs, and tables
-Implement slicers and interactive filters
+* Data Preprocessing
 
-Analysis & Insights:
+  * Handling missing values
+  * Feature encoding
+  * Normalization/Scaling
+* Exploratory Data Analysis (EDA)
 
-Use DAX functions for custom measures
-Generate reports with meaningful insights
+  * Histograms, Pairplots, Boxplots
+  
+* **K-Means Clustering**
 
-Usage
-Run Power BI Desktop and open the .pbix file.
-Interact with dashboards using filters and drill-downs.
-Export reports in PDF, PPT, or Excel format as needed.
+  * Elbow Method to determine optimal clusters (k)
+  * Cluster analysis and interpretation
+* Dimensionality Reduction (optional: PCA for visualization)
+* Cluster Visualization
 
-Future Enhancements:
+  * 2D scatter plots
+  * Color-coded segmentation
 
-🔹 Implement real-time data updates
+---
 
-🔹 Integrate additional data sources (SQL, APIs)
+## 📊 Results
 
-🔹 Automate report generation and scheduling
+* Optimal number of clusters determined using Elbow Method.
+* Customer segments identified based on income and spending patterns.
+* Visualized segments to interpret customer behaviors for business insights.
 
-![Screenshot](https://github.com/user-attachments/assets/1016e05d-5612-449e-a614-2a16f5f53f48)
+---
+
+## 📌 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/customer-segmentation-kmeans.git
+cd customer-segmentation-kmeans
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch Jupyter Notebook
+
+```bash
+jupyter notebook notebooks/segmentation_analysis.ipynb
+```
+
+---
+
+## 🧾 Requirements
+
+* Python 3.7+
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
+* jupyter
+
+*All dependencies listed in `requirements.txt`.*
+
+---
+
+## 🚀 Key Learnings
+
+* Applying unsupervised machine learning to real-world business problems.
+* Importance of feature selection and scaling in clustering algorithms.
+* Effective data visualization for non-technical stakeholders.
+
+---
+
+## 📈 Future Work
+
+* Use advanced clustering algorithms (e.g., DBSCAN, Hierarchical Clustering)
+* Deploy the model as a REST API using Flask or FastAPI
+* Build a Power BI or Tableau dashboard to visualize customer segments
+
+---
+
+## 📬 Contact
+
+**Author**: Suriyaprakash A
+**Email**: \[[asuriyaprakash059@gmail.com](mailto:asuriyaprakash059@gmail.com)]
+
+---
